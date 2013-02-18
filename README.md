@@ -1,7 +1,7 @@
 segno
 =====
 
-generic low-level audio synthesis and processing
+Generic low-level audio synthesis and processing.
 
 License
 -------
