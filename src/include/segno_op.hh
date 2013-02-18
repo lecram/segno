@@ -1,5 +1,7 @@
 /* Basic Operators. */
 
+namespace Segno {
+
 namespace Op {
 
 class Add: public Vertex {
@@ -8,9 +10,7 @@ class Add: public Vertex {
   float *a;
   float *b;
   float output;
-  void tick() {
-    output = *a + *b;
-  }
+  void tick();
 };
 
 class Mul: public Vertex {
@@ -19,9 +19,9 @@ class Mul: public Vertex {
   float *a;
   float *b;
   float output;
-  void tick() {
-    output = *a * *b;
-  }
+  void tick();
 };
 
 } // Op
+
+} // Segno

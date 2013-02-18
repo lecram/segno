@@ -1,5 +1,7 @@
 /* Phase Accumulators. */
 
+namespace Segno {
+
 namespace PA {
 
 class Ramp: public Vertex {
@@ -7,10 +9,9 @@ class Ramp: public Vertex {
   Ramp() : output(0.0f) {}
   float *frequency;
   float output;
-  void tick() {
-    output += *frequency / sample_rate;
-    output -= (output > 1.0f);
-  }
+  void tick();
 };
 
 } // PA
+
+} // Segno
