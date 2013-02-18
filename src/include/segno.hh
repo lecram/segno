@@ -18,8 +18,8 @@ namespace Segno {
         }
         void tick() {
           std::vector<Vertex*>::iterator vertex;
-            for (vertex = vertices.begin(); vertex != vertices.end(); vertex++)
-                (**vertex).tick();
+          for (vertex = vertices.begin(); vertex != vertices.end(); vertex++)
+              (**vertex).tick();
         }
         void pulse(float duration) {
           int samples, i;
