@@ -10,37 +10,25 @@ namespace Segno {
         virtual ~Vertex() {}
     };
 
-    void
-    pulse(std::vector<Vertex*> vertices, float duration)
-    {
-        std::vector<Vertex*>::iterator vertex;
-        int samples, i;
-
-        samples = duration * sample_rate;
-        for (i = 0; i < samples; i++)
+    class Graph {
+        std::vector<Vertex*> vertices;
+      public:
+        void add(Vertex* vertex) {
+          vertices.push_back(vertex);
+        }
+        void tick() {
+          std::vector<Vertex*>::iterator vertex;
             for (vertex = vertices.begin(); vertex != vertices.end(); vertex++)
                 (**vertex).tick();
-    }
+        }
+        void pulse(float duration) {
+          int samples, i;
 
-    void
-    pulse_while(std::vector<Vertex*> vertices, bool *condition)
-    {
-        std::vector<Vertex*>::iterator vertex;
-
-        while (*condition)
-            for (vertex = vertices.begin(); vertex != vertices.end(); vertex++)
-                (**vertex).tick();
-    }
-
-    void
-    pulse_until(std::vector<Vertex*> vertices, bool *condition)
-    {
-        std::vector<Vertex*>::iterator vertex;
-
-        while (!*condition)
-            for (vertex = vertices.begin(); vertex != vertices.end(); vertex++)
-                (**vertex).tick();
-    }
+          samples = duration * sample_rate;
+          for (i = 0; i < samples; i++)
+            tick();
+        }
+    };
 
 #include "segno_op.hh"
 #include "segno_dl.hh"
