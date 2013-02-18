@@ -1,5 +1,8 @@
 /* Phase Accumulators. */
 
+#include <vector>
+
+#include "segno_core.hh"
 #include "segno_pa.hh"
 
 namespace Segno {

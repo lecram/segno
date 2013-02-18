@@ -1,5 +1,9 @@
 /* Phase-to-Amplitude Converters. */
 
+#include <vector>
+#include <cmath>
+
+#include "segno_core.hh"
 #include "segno_pac.hh"
 
 namespace Segno {

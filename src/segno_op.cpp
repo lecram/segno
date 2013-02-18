@@ -1,5 +1,8 @@
 /* Basic Operators. */
 
+#include <vector>
+
+#include "segno_core.hh"
 #include "segno_op.hh"
 
 namespace Segno {

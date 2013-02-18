@@ -1,5 +1,7 @@
 /* Segno. */
 
+#include <vector>
+
 #include "segno_core.hh"
 
 namespace Segno {

@@ -1,5 +1,10 @@
 /* Delay Line. */
 
+#include <vector>
+#include <cmath>
+#include <cstring>
+
+#include "segno_core.hh"
 #include "segno_dl.hh"
 
 namespace Segno {

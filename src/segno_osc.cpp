@@ -1,5 +1,9 @@
 /* Stand-alone oscillators. */
 
+#include <vector>
+#include <cmath>
+
+#include "segno_core.hh"
 #include "segno_osc.hh"
 
 namespace Segno {

@@ -2,6 +2,9 @@
 
 // #include <sndfile.hh>
 
+#include <vector>
+
+#include "segno_core.hh"
 #include "segno_file.hh"
 
 namespace Segno {

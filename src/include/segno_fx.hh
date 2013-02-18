@@ -23,7 +23,7 @@ class Flanger: public Vertex {
   float *dry;
   float *wet;
   float output;
-  Flanger() : delayline(0.1f);
+  Flanger();
   void plug();
   void tick();
 };
