@@ -3,6 +3,25 @@ segno
 
 Generic low-level audio synthesis and processing.
 
+
+Compiling
+---------
+
+```
+cd segno/src
+make
+```
+
+
+Compiling Examples
+------------------
+
+```
+cd segno/src/examples
+make
+```
+
+
 License
 -------
 
