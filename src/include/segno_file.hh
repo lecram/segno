@@ -3,6 +3,8 @@
 #ifndef SEGNO_FILE_HH_
 #define SEGNO_FILE_HH_
 
+#include <sndfile.hh>
+
 #define SEGNO_BUFFER_SIZE 2520 // multiple of 1, 2, 3, 4, 5, 6, 7, 8, 9 & 10.
 
 namespace Segno {

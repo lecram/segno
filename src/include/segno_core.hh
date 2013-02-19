@@ -3,6 +3,8 @@
 #ifndef SEGNO_CORE_HH_
 #define SEGNO_CORE_HH_
 
+#include <vector>
+
 namespace Segno {
 
 extern int sample_rate;

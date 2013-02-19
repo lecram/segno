@@ -1,9 +1,3 @@
-#include <cmath>
-#include <cstring>
-#include <vector>
-
-#include <sndfile.hh>
-
 #include "segno.hh"
 #include "segno_file.hh"
 
