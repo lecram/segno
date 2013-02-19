@@ -9,29 +9,29 @@ dist : $(objects)
 	ar rcs libsegno.a $(objects)
 
 segno_core.o : segno_core.cpp $(I)segno_core.hh
-	$(CC) -c $(CPPFLAGS) segno_core.cpp
+	$(CXX) -c $(CPPFLAGS) segno_core.cpp
 
 segno_op.o : segno_op.cpp $(I)segno_core.hh $(I)segno_op.hh
-	$(CC) -c $(CPPFLAGS) segno_op.cpp
+	$(CXX) -c $(CPPFLAGS) segno_op.cpp
 
 segno_dl.o : segno_dl.cpp $(I)segno_core.hh $(I)segno_dl.hh
-	$(CC) -c $(CPPFLAGS) segno_dl.cpp
+	$(CXX) -c $(CPPFLAGS) segno_dl.cpp
 
 segno_pa.o : segno_pa.cpp $(I)segno_core.hh $(I)segno_pa.hh
-	$(CC) -c $(CPPFLAGS) segno_pa.cpp
+	$(CXX) -c $(CPPFLAGS) segno_pa.cpp
 
 segno_pac.o : segno_pac.cpp $(I)segno_core.hh $(I)segno_pac.hh
-	$(CC) -c $(CPPFLAGS) segno_pac.cpp
+	$(CXX) -c $(CPPFLAGS) segno_pac.cpp
 
 segno_osc.o : segno_osc.cpp $(I)segno_core.hh $(I)segno_osc.hh
-	$(CC) -c $(CPPFLAGS) segno_osc.cpp
+	$(CXX) -c $(CPPFLAGS) segno_osc.cpp
 
 segno_fx.o : segno_fx.cpp $(I)segno_core.hh $(I)segno_op.hh $(I)segno_dl.hh $(I)segno_osc.hh $(I)segno_fx.hh
-	$(CC) -c $(CPPFLAGS) segno_fx.cpp
+	$(CXX) -c $(CPPFLAGS) segno_fx.cpp
 
 
 segno_file.o : segno_file.cpp $(I)segno_core.hh $(I)segno_file.hh
-	$(CC) -c $(CPPFLAGS) segno_file.cpp
+	$(CXX) -c $(CPPFLAGS) segno_file.cpp
 
 .PHONY : clean
 clean :
