@@ -1,5 +1,8 @@
 /* Phase-to-Amplitude Converters. */
 
+#ifndef SEGNO_PAC_HH_
+#define SEGNO_PAC_HH_
+
 #ifndef M_PI
 #define M_PI 3.14159265358979323846264338
 #endif
@@ -52,3 +55,5 @@ class Impulse: public Vertex {
 } // PAC
 
 } // Segno
+
+#endif // SEGNO_PAC_HH_

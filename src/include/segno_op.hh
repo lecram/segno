@@ -1,5 +1,8 @@
 /* Basic Operators. */
 
+#ifndef SEGNO_OP_HH_
+#define SEGNO_OP_HH_
+
 namespace Segno {
 
 namespace Op {
@@ -25,3 +28,5 @@ class Mul: public Vertex {
 } // Op
 
 } // Segno
+
+#endif // SEGNO_OP_HH_

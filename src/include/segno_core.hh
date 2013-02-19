@@ -1,8 +1,11 @@
 /* Segno Core. */
 
+#ifndef SEGNO_CORE_HH_
+#define SEGNO_CORE_HH_
+
 namespace Segno {
 
-int sample_rate = 48000;
+extern int sample_rate;
 
 class Vertex {
  public:
@@ -19,3 +22,5 @@ class Graph {
 };
 
 } // Segno
+
+#endif // SEGNO_CORE_HH_

@@ -1,5 +1,8 @@
 /* Delay Line. */
 
+#ifndef SEGNO_DL_HH_
+#define SEGNO_DL_HH_
+
 namespace Segno {
 
 namespace DL {
@@ -33,3 +36,5 @@ class DelayLineInterpolated: public Vertex {
 } // DL
 
 } // Segno
+
+#endif // SEGNO_DL_HH_

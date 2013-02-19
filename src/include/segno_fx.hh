@@ -1,5 +1,8 @@
 /* High-level Effects. */
 
+#ifndef SEGNO_FX_HH_
+#define SEGNO_FX_HH_
+
 namespace Segno {
 
 namespace FX {
@@ -31,3 +34,5 @@ class Flanger: public Vertex {
 } // FX
 
 } // Segno
+
+#endif // SEGNO_FX_HH_

@@ -6,6 +6,8 @@
 
 namespace Segno {
 
+int sample_rate = 48000;
+
 void
 Graph::add(Vertex* vertex) {
   vertices.push_back(vertex);

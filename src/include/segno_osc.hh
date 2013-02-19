@@ -1,5 +1,8 @@
 /* Stand-alone oscillators. */
 
+#ifndef SEGNO_OSC_HH_
+#define SEGNO_OSC_HH_
+
 namespace Segno {
 
 namespace Osc {
@@ -83,3 +86,5 @@ class Impulse: public Vertex {
 } // Osc
 
 } // Segno
+
+#endif // SEGNO_OSC_HH_
