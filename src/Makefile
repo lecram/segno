@@ -2,7 +2,8 @@ CPPFLAGS = -Wall -Wextra -Werror -ansi -pedantic -O2 -Iinclude
 
 I = include/
 
-objects = segno_core.o segno_op.o segno_dl.o segno_pa.o segno_pac.o segno_osc.o segno_fx.o
+objects = segno_core.o segno_op.o segno_dl.o segno_pa.o segno_pac.o segno_osc.o segno_fx.o \
+          segno_file.o
 
 dist : $(objects)
 	ar rcs libsegno.a $(objects)
@@ -27,6 +28,10 @@ segno_osc.o : segno_osc.cpp $(I)segno_core.hh $(I)segno_osc.hh
 
 segno_fx.o : segno_fx.cpp $(I)segno_core.hh $(I)segno_op.hh $(I)segno_dl.hh $(I)segno_osc.hh $(I)segno_fx.hh
 	$(CC) -c $(CPPFLAGS) segno_fx.cpp
+
+
+segno_file.o : segno_file.cpp $(I)segno_core.hh $(I)segno_file.hh
+	$(CC) -c $(CPPFLAGS) segno_file.cpp
 
 .PHONY : clean
 clean :

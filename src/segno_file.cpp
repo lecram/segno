@@ -1,8 +1,8 @@
 /* File read/write with libsdnfile. */
 
-// #include <sndfile.hh>
-
 #include <vector>
+
+#include <sndfile.hh>
 
 #include "segno_core.hh"
 #include "segno_file.hh"
