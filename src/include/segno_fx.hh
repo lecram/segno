@@ -7,6 +7,21 @@ namespace Segno {
 
 namespace FX {
 
+class Tremolo: public Vertex {
+  Osc::Sine lfo;
+  Op::Mul mul;
+  float lfo_amplitude;
+  float lfo_offset;
+ public:
+  float *input;
+  float *frequency;
+  float *depth;
+  float output;
+  Tremolo();
+  void plug();
+  void tick();
+};
+
 class Flanger: public Vertex {
   Osc::Triangle lfo;
   DL::DelayLineInterpolated delayline;

@@ -12,6 +12,28 @@ namespace Segno {
 
 namespace FX {
 
+Tremolo::Tremolo() {
+  lfo.amplitude = &lfo_amplitude;
+  lfo.offset = &lfo_offset;
+  mul.b = &lfo.output;
+}
+
+void
+Tremolo::plug() {
+  lfo.frequency = frequency;
+  mul.a = input;
+}
+
+void
+Tremolo::tick() {
+  lfo_offset = 1 - *depth / 2;
+  lfo_amplitude = *depth / 2;
+  lfo.tick();
+  mul.tick();
+  output = mul.output;
+}
+
+
 Flanger::Flanger() : delayline(0.1f) {
   lfo.amplitude = &lfo_amplitude;
   lfo.offset = &lfo_offset;
