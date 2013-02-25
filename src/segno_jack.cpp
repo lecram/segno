@@ -2,8 +2,6 @@
 
 #include <vector>
 
-#include <jackaudioio.hpp>
-
 #include "segno_core.hh"
 #include "segno_jack.hh"
 

@@ -3,6 +3,8 @@
 #ifndef SEGNO_JACK_HH_
 #define SEGNO_JACK_HH_
 
+#include <jackaudioio.hpp>
+
 namespace Segno {
 
 namespace Jack {
