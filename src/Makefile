@@ -4,7 +4,7 @@ CPPFLAGS = -Iinclude
 I = include/
 
 objects = segno_core.o segno_op.o segno_dl.o segno_pa.o segno_pac.o segno_osc.o segno_fx.o \
-          segno_file.o
+          segno_file.o segno_jack.o
 
 dist : $(objects)
 	ar rcs libsegno.a $(objects)
@@ -33,6 +33,9 @@ segno_fx.o : segno_fx.cpp $(I)segno_core.hh $(I)segno_op.hh $(I)segno_dl.hh $(I)
 
 segno_file.o : segno_file.cpp $(I)segno_core.hh $(I)segno_file.hh
 	$(CXX) -c $(CXXFLAGS) segno_file.cpp $(CPPFLAGS)
+
+segno_jack.o : segno_jack.cpp $(I)segno_core.hh $(I)segno_jack.hh
+	$(CXX) -c $(CXXFLAGS) segno_jack.cpp $(CPPFLAGS)
 
 .PHONY : clean
 clean :
