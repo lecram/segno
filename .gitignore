@@ -1,6 +1,1 @@
-*.o
-*.a
 *.flac
-src/examples/sine
-src/examples/tremolo
-src/examples/realtime
