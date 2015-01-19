@@ -53,6 +53,7 @@ function core.run(graph, events)
             v:close()
         end
     end
+    return samples
 end
 
 core.set_sr(48000)
