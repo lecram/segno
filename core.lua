@@ -14,20 +14,6 @@ function core.get_sr()
     return core.sample_rate
 end
 
-function core.tick(seq, dur)
-    for i = 1, dur do
-        for j, v in ipairs(seq) do v() end
-    end
-end
-
-function core.close(seq)
-    for i, v in ipairs(seq) do
-        if type(v.close) == "function" then
-            v:close()
-        end
-    end
-end
-
 function core.run(graph, events)
     table.sort(events, function (e1, e2) return e1[1] < e2[1] end)
     local index = 1
